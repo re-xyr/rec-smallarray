@@ -1,0 +1,73 @@
+name:                rec-smallarray
+version:             0.1.0.0
+github:              "re-xyr/rec-smallarray"
+license:             BSD3
+author:              "Xy Ren"
+maintainer:          "xy.r@outlook.com"
+copyright:           "2022 Xy Ren"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+synopsis:            SmallArray-based extensible records for small-scale fast reads
+category:            Data, Records
+
+description:         Please see the README on GitHub at <https://github.com/re-xyr/rec-smallarray#readme>
+
+dependencies:
+- base >= 4.12 && < 5
+- primitive >= 0.6 && < 0.8
+
+ghc-options:
+- -Wall
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-deriving-strategies
+- -Wpartial-fields
+- -Wunused-type-patterns
+# - -ddump-simpl
+# - -ddump-to-file
+# - -dsuppress-all
+# - -dsuppress-uniques
+
+default-extensions:
+- BlockArguments
+- DataKinds
+- EmptyCase
+- FlexibleContexts
+- FlexibleInstances
+- GADTs
+- GeneralizedNewtypeDeriving
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- NoStarIsType
+- PatternSynonyms
+- PolyKinds
+- QuantifiedConstraints
+- RankNTypes
+- RoleAnnotations
+- ScopedTypeVariables
+- TypeApplications
+- TypeFamilies
+- TypeOperators
+- UndecidableInstances
+- UnicodeSyntax
+- ViewPatterns
+
+library:
+  source-dirs: src
+
+tests:
+  rec-smallarray-test:
+    main:                Main.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - rec-smallarray
+    - hspec
