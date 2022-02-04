@@ -1,0 +1,7 @@
+resolver: nightly-2022-02-01
+
+packages:
+- .
+
+ghc-options:
+  "$everything": -haddock

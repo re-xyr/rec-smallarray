@@ -1,5 +1,8 @@
 # rec-smallarray
 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/re-xyr/rec-smallarray/build)](https://github.com/re-xyr/rec-smallarray/actions/workflows/build.yaml)
+[![Hackage](https://img.shields.io/hackage/v/rec-smallarray)](https://hackage.haskell.org/package/rec-smallarray)
+
 An immutable extensible record type based on `SmallArray`s, intended to provide fast reads on small structures.
 
 ## Asymptotics
