@@ -16,8 +16,8 @@ category:            Data, Records
 description:         Please see the README on GitHub at <https://github.com/re-xyr/rec-smallarray#readme>
 
 dependencies:
-- base >= 4.12 && < 5
-- primitive >= 0.6 && < 0.8
+- base >= 4.12 && <= 4.17
+- primitive >= 0.6.4 && < 0.8
 
 ghc-options:
 - -Wall
@@ -39,7 +39,6 @@ default-extensions:
 - FlexibleContexts
 - FlexibleInstances
 - GADTs
-- GeneralizedNewtypeDeriving
 - KindSignatures
 - LambdaCase
 - MultiParamTypeClasses
